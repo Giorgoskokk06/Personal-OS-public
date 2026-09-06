@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1200" viewBox="0 0 1440 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Personal OS: request and memory flow</title>
+  <desc id="desc">Webhook acceptance, background checks and retrieval, conversational routing, validated reply, then memory enrichment. Google transcription and embeddings are separate cloud paths. Postgres stores memory, provenance, ingress and routing telemetry. This is a source-based overview, not a verified deployment diagram.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#23665D"/></marker>
+    <marker id="auxArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9C6842"/></marker>
+  </defs>
+  <rect width="1440" height="1200" fill="#F3F1E9"/>
+  <rect width="1440" height="8" fill="#23665D"/>
+  <g font-family="DejaVu Sans, sans-serif">
+    <text x="64" y="69" font-size="13" letter-spacing="2.4" fill="#23665D">PERSONAL OS / ARCHITECTURE</text>
+    <text x="62" y="124" font-size="42" font-weight="700" letter-spacing="-1.2" fill="#182F31">One request. Several data boundaries.</text>
+    <text x="64" y="163" font-size="19" fill="#536968">Single-owner Telegram application · TypeScript / Deno · public source v1.3.2</text>
+
+    <rect x="64" y="208" width="680" height="116" rx="16" fill="#183B38"/>
+    <text x="88" y="240" font-size="12" letter-spacing="2" fill="#A6C7B9">01 / ACCEPT</text>
+    <text x="88" y="271" font-size="25" font-weight="700" fill="#F4F4E9">Telegram webhook</text>
+    <text x="88" y="303" font-size="16" fill="#CBDAD0">Text / voice · secret + owner check · unique ingress event</text>
+    <path d="M404 325v41" fill="none" stroke="#23665D" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="424" y="352" font-size="13" fill="#536968">ACK, then background work</text>
+
+    <rect x="64" y="371" width="680" height="132" rx="16" fill="#FFFFFF" stroke="#CAD2C6"/>
+    <text x="88" y="403" font-size="12" letter-spacing="2" fill="#23665D">02 / RETRIEVE</text>
+    <text x="88" y="434" font-size="25" font-weight="700" fill="#182F31">Text checks + relevant context</text>
+    <text x="88" y="465" font-size="16" fill="#536968">Recent turns, current state when relevant, records and evidence</text>
+    <text x="88" y="487" font-size="15" fill="#536968">Entity / exact match + full-text search + optional vectors</text>
+    <path d="M404 504v43" fill="none" stroke="#23665D" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="64" y="552" width="680" height="128" rx="16" fill="#FFFFFF" stroke="#CAD2C6"/>
+    <text x="88" y="584" font-size="12" letter-spacing="2" fill="#23665D">03 / ROUTE</text>
+    <text x="88" y="615" font-size="25" font-weight="700" fill="#182F31">Conversational provider selection</text>
+    <text x="88" y="646" font-size="16" fill="#536968">Sensitivity eligibility · quota guards · circuits · bounded fallback</text>
+    <text x="88" y="668" font-size="15" font-weight="700" fill="#23665D">Google Gemini / NVIDIA hosted NIM / OpenRouter</text>
+    <path d="M404 681v42" fill="none" stroke="#23665D" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="64" y="728" width="680" height="116" rx="16" fill="#FFFFFF" stroke="#CAD2C6"/>
+    <text x="88" y="760" font-size="12" letter-spacing="2" fill="#23665D">04 / RESPOND</text>
+    <text x="88" y="791" font-size="25" font-weight="700" fill="#182F31">Parse, validate, send the reply</text>
+    <text x="88" y="823" font-size="16" fill="#536968">Shared schema checks · plain Telegram output · raw-text policy</text>
+    <path d="M404 845v42" fill="none" stroke="#23665D" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="424" y="873" font-size="13" fill="#536968">Reply precedes enrichment</text>
+
+    <rect x="64" y="892" width="680" height="128" rx="16" fill="#E1E7D9" stroke="#B4C5AA"/>
+    <text x="88" y="924" font-size="12" letter-spacing="2" fill="#23665D">05 / ENRICH</text>
+    <text x="88" y="955" font-size="25" font-weight="700" fill="#182F31">Memory operations + guarded state</text>
+    <text x="88" y="985" font-size="16" fill="#536968">Source links, canonical records and entity relationships</text>
+    <text x="88" y="1008" font-size="15" fill="#536968">Eligible record embeddings are best-effort</text>
+
+    <rect x="879" y="208" width="497" height="266" rx="16" fill="#F1E5D7" stroke="#CDB498"/>
+    <text x="907" y="242" font-size="12" letter-spacing="2" fill="#8E5C35">SEPARATE CLOUD PATHS</text>
+    <text x="907" y="279" font-size="26" font-weight="700" fill="#593E2A">Google auxiliary APIs</text>
+    <text x="907" y="318" font-size="17" fill="#72523A">Voice transcription before text checks</text>
+    <text x="907" y="349" font-size="17" fill="#72523A">Query embeddings during retrieval</text>
+    <text x="907" y="380" font-size="17" fill="#72523A">Eligible record embeddings after reply</text>
+    <text x="907" y="426" font-size="14" fill="#72523A">These calls do not use the conversational router.</text>
+    <text x="907" y="449" font-size="14" fill="#72523A">Do not submit real secrets or confidential data.</text>
+    <path d="M745 267h129" fill="none" stroke="#9C6842" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#auxArrow)"/>
+    <text x="773" y="253" font-size="12" fill="#8E5C35">voice</text>
+    <path d="M879 330h-70v83h-60" fill="none" stroke="#9C6842" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#auxArrow)"/>
+    <text x="819" y="385" font-size="11" fill="#8E5C35">text</text>
+    <path d="M745 473h92v-70h37" fill="none" stroke="#9C6842" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#auxArrow)"/>
+
+    <rect x="879" y="605" width="497" height="240" rx="16" fill="#183B38"/>
+    <text x="907" y="642" font-size="12" letter-spacing="2" fill="#A6C7B9">PERSISTENT STORAGE</text>
+    <text x="907" y="680" font-size="26" font-weight="700" fill="#F4F4E9">Supabase Postgres + pgvector</text>
+    <text x="907" y="720" font-size="17" fill="#CBDAD0">Current state / canonical records / entities</text>
+    <text x="907" y="751" font-size="17" fill="#CBDAD0">Historical evidence / source references</text>
+    <text x="907" y="782" font-size="17" fill="#CBDAD0">Ingress state / routing telemetry / circuits</text>
+    <text x="907" y="820" font-size="14" fill="#A6C7B9">Model: multiple tables and retrieval functions</text>
+    <path d="M879 654h-84V493h-46" fill="none" stroke="#23665D" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="800" y="576" font-size="12" fill="#23665D">read</text>
+    <path d="M745 947h382v-97" fill="none" stroke="#23665D" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="818" y="933" font-size="12" fill="#23665D">write / link</text>
+
+    <rect x="879" y="975" width="497" height="45" rx="8" fill="#E4E7DD"/>
+    <text x="899" y="1004" font-size="14" fill="#49605B">Circuit and telemetry reads/writes omitted for clarity.</text>
+    <path d="M64 1062H1376" stroke="#CAD2C6"/>
+    <text x="64" y="1097" font-size="16" font-weight="700" fill="#182F31">Boundary notes</text>
+    <text x="64" y="1125" font-size="15" fill="#536968">Background execution is not a durable queue. Validation does not prove factual accuracy.</text>
+    <text x="64" y="1151" font-size="15" fill="#536968">/nostore suppresses raw text; it does not disable all metadata or memory writes.</text>
+    <text x="64" y="1180" font-size="11" letter-spacing="1" fill="#66736B">SOURCE-BASED OVERVIEW / NOT A LIVE DEPLOYMENT VERIFICATION</text>
+  </g>
+</svg>

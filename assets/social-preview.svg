@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Personal OS</title>
+  <desc id="desc">Telegram-first AI memory, retrieval and multi-provider routing. An AI-assisted engineering project with public code, a case study and an offline demo. Conceptual illustration, not a live screenshot.</desc>
+  <rect width="1280" height="640" fill="#F3F1E9"/>
+  <rect x="0" y="0" width="1280" height="8" fill="#23665D"/>
+  <g font-family="DejaVu Sans, sans-serif">
+    <rect x="64" y="62" width="30" height="30" rx="7" fill="#23665D"/>
+    <path d="M72 77h14M79 70v14" stroke="#F3F1E9" stroke-width="2"/>
+    <text x="111" y="83" font-size="13" letter-spacing="2.2" fill="#35554D">PERSONAL PROJECT / PUBLIC SOURCE</text>
+    <text x="59" y="218" font-size="88" font-weight="700" letter-spacing="-5" fill="#182F31">Personal OS</text>
+    <text x="64" y="288" font-size="27" fill="#365456">Telegram-first AI memory,</text>
+    <text x="64" y="328" font-size="27" fill="#365456">retrieval and multi-provider routing.</text>
+    <path d="M64 382H670" stroke="#C9CFC4" stroke-width="1.5"/>
+    <g font-size="16" fill="#244A44">
+      <rect x="64" y="409" width="127" height="38" rx="19" fill="#E1E7D9"/>
+      <text x="83" y="434">TypeScript</text>
+      <rect x="201" y="409" width="82" height="38" rx="19" fill="#E1E7D9"/>
+      <text x="221" y="434">Deno</text>
+      <rect x="293" y="409" width="151" height="38" rx="19" fill="#E1E7D9"/>
+      <text x="312" y="434">Postgres + FTS</text>
+      <rect x="454" y="409" width="108" height="38" rx="19" fill="#E1E7D9"/>
+      <text x="474" y="434">pgvector</text>
+    </g>
+    <text x="64" y="517" font-size="18" fill="#546968">An AI-assisted engineering project.</text>
+    <text x="64" y="578" font-size="12" letter-spacing="2" fill="#53645F">CODE / CASE STUDY / OFFLINE DEMO</text>
+    <rect x="749" y="61" width="467" height="518" rx="24" fill="#183B38"/>
+    <text x="785" y="106" font-size="12" letter-spacing="2.2" fill="#A6C7B9">FROM MESSAGE TO MEMORY</text>
+    <path d="M802 174v294" stroke="#44665B" stroke-width="2"/>
+    <g fill="#AFCC93">
+      <circle cx="802" cy="174" r="7"/>
+      <circle cx="802" cy="305" r="7"/>
+      <circle cx="802" cy="436" r="7"/>
+    </g>
+    <g font-size="12" letter-spacing="2" fill="#ADC6B5">
+      <text x="828" y="165">01 / INPUT</text>
+      <text x="828" y="296">02 / CONTEXT</text>
+      <text x="828" y="427">03 / RESPONSE</text>
+    </g>
+    <g font-size="25" font-weight="700" fill="#F4F4E9">
+      <text x="828" y="203">Telegram</text>
+      <text x="828" y="334">Structured memory</text>
+      <text x="828" y="465">Provider routing</text>
+    </g>
+    <g font-size="14" fill="#BDD0C2">
+      <text x="828" y="231">Text + voice</text>
+      <text x="828" y="362">Records + evidence + retrieval</text>
+      <text x="828" y="493">Eligibility + fallback + validation</text>
+    </g>
+    <text x="785" y="549" font-size="11" fill="#A1BEB1">Conceptual overview · not a live application screen</text>
+  </g>
+</svg>
