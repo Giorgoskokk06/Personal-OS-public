@@ -1,0 +1,6 @@
+[functions.telegram]
+verify_jwt = false
+
+# Required for local testing of EdgeRuntime.waitUntil background work.
+[edge_runtime]
+policy = "per_worker"

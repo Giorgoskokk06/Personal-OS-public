@@ -1,0 +1,25 @@
+.dev.vars
+.env
+.env.*
+!.dev.vars.example
+node_modules/
+exports/
+*.log
+.DS_Store
+
+# Local runtime state
+.wrangler/
+supabase/.temp/
+
+# Personal OS local / sensitive imports
+imports/historical/
+imports/updates/
+
+# One-off historical import helpers
+07_dry_run_all.sh
+08_import_all_after_review.sh
+
+imports/private/
+*-upgrade.zip
+personal-os-v1-final*.zip
+personal-os-v*.zip

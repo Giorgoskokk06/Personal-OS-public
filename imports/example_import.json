@@ -1,0 +1,72 @@
+{
+  "format_version": 1,
+  "source": {
+    "source_type": "canonical",
+    "title": "Example Personal OS Canonical",
+    "original_filename": "example.md",
+    "external_ref": null,
+    "version": "1.0",
+    "authority_level": 85,
+    "sensitivity": "personal_safe",
+    "content_hash": null,
+    "captured_at": "2026-09-05T00:00:00+03:00",
+    "metadata": {
+      "notes": "Example only"
+    }
+  },
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "heading": "Learning",
+      "content": "SQL is an active technical learning priority.",
+      "metadata": {}
+    }
+  ],
+  "records": [
+    {
+      "ref": "sql_goal",
+      "record_type": "goal",
+      "domains": ["learning", "career"],
+      "title": "Build strong practical SQL capability",
+      "body": "Develop SQL through hands-on querying, debugging and real or synthetic data problems.",
+      "status": "active",
+      "fact_state": "goal",
+      "knowledge_status": "confirmed",
+      "confidence": 1,
+      "importance": 0.9,
+      "authority_level": 85,
+      "priority": 2,
+      "occurred_at": null,
+      "due_at": null,
+      "data": {
+        "success_criteria": "Evidence progresses beyond course completion into practical use."
+      },
+      "source_chunk_index": 0
+    },
+    {
+      "ref": "sql_skill",
+      "record_type": "skill",
+      "domains": ["learning"],
+      "title": "SQL",
+      "body": "Current skill record for SQL.",
+      "status": "active",
+      "fact_state": "fact",
+      "confidence": 0.9,
+      "importance": 0.85,
+      "data": {
+        "maturity": "understand",
+        "target_maturity": "independent"
+      },
+      "source_chunk_index": 0
+    }
+  ],
+  "links": [
+    {
+      "from_ref": "sql_goal",
+      "to_ref": "sql_skill",
+      "relation_type": "develops",
+      "metadata": {}
+    }
+  ],
+  "current_state": null
+}
